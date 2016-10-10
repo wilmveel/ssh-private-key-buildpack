@@ -12,7 +12,7 @@ ENV_DIR=${3:-}
 
 echo "-----> Willem2"
 echo "$(cat $ENV_DIR/SSH_KEY)"
-echo "$(cat $ENV_DIR/SSH_HOSTS)"
+echo ${SSH_HOSTS}
 echo ${SSH_HOSTS:-"git@github.com"}
 
 ssh_key="$(cat $ENV_DIR/SSH_KEY)"
