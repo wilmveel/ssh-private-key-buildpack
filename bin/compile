@@ -8,8 +8,8 @@ function indent() {
 	esac
 }
 
-echo "-----> Willem"
-echo $ENV_DIR/SSH_KEY
+echo "-----> Willem2"
+echo $(cat $ENV_DIR/SSH_KEY)
 
 ENV_DIR=${3:-}
 ssh_key="$(cat $ENV_DIR/SSH_KEY)"
