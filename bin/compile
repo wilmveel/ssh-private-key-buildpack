@@ -16,7 +16,7 @@ echo ${SSH_HOSTS}
 echo ${SSH_HOSTS:-"git@github.com"}
 
 ssh_key="$(cat $ENV_DIR/SSH_KEY)"
-ssh_hosts=${SSH_HOSTS:-"git@github.com"}
+ssh_hosts=${SSH_HOSTS}
 
 if [ "$ssh_key" != "" ]; then
 	echo "-----> Running SSH private key setup"
